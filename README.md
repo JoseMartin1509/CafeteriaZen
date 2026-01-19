@@ -173,17 +173,6 @@ npx serve
 - Lazy loading en iframe del mapa
 - Sin dependencias externas de JavaScript
 
-## Navegadores Soportados
-
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
-
-## Autor
-
-Desarrollado por **José Martín**
-
 ---
 
 **Cafetería Zen** - El Arte del Café
