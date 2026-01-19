@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafeteria-Zen</title>
+    <meta name="description" content="Cafetería Zen - Disfruta del mejor café artesanal en un ambiente único y relajante. Visítanos y déjate sorprender." />
+    <title>Cafetería Zen | El Arte del Café</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,84 +23,82 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <header class="header">
-      <video autoplay muted loop id="bg-video">
+    <header class="header" id="inicio">
+      <video autoplay muted loop playsinline id="bg-video">
         <source src="videos/welcome-video.webm" type="video/webm" />
         <source src="videos/welcome-video.mp4" type="video/mp4" />
         Tu navegador no soporta videos HTML5.
       </video>
       <div class="header-logo">
-        <h1>Cafeteria Zen</h1>
-        <h2>LA CAFETERIA</h2>
+        <h1>Cafetería Zen</h1>
+        <h2>El Arte del Café</h2>
       </div>
       <nav class="navbar">
-        <a href="">Inicio</a>
-        <a href="">Servicios</a>
-        <a href="">Blog</a>
-        <a href="">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
       <section class="welcome">
         <div class="container">
           <div class="welcome-content">
             <h2>
-              <span>DÉJATE SORPRENDER</span>
-              <span>TE GUSTARÁ</span>
+              <span>Déjate Sorprender</span>
+              <span>Te Gustará</span>
             </h2>
             <p>
-              Trabajamos sólo con los mejores ingredientes.Una vez pruebes,
-              nuestro café será la mejor forma de empezar tu rutina.
+              Trabajamos sólo con los mejores granos seleccionados. Una vez pruebes
+              nuestro café, será la mejor forma de empezar cada día de tu vida.
             </p>
             <div class="welcome-btn">
-              <a href="" class="btn">Visítanos</a>
+              <a href="#contacto" class="btn">Visítanos</a>
             </div>
           </div>
         </div>
       </section>
     </header>
 
-    <section class="best-sellers">
+    <section class="best-sellers" id="productos">
       <div class="container">
-        <h2 class="title2">Los más vendidos</h2>
+        <h2 class="title2">Los Más Vendidos</h2>
 
         <div class="best-sellers-content">
           <div class="best-sellers-item">
+            <img src="images/pro1.jpg" alt="Café Latte cremoso" />
             <h3>Latte</h3>
-            <img src="images/pro1.jpg" alt="Imágen del Producto" />
             <p>
-              Consta de 2 onzas de café espresso y 3 onzas de leche al vapor
+              Delicioso espresso con leche vaporizada sedosa, perfecto para quienes buscan suavidad y cremosidad.
             </p>
-            <a href="" class="btn"> Añadir al carrito $10 </a>
+            <a href="#" class="btn">Añadir $45</a>
           </div>
 
           <div class="best-sellers-item">
-            <h3>Café expresso</h3>
-            <img src="images/pro2.jpg" alt="Imágen del Producto" />
+            <img src="images/pro2.jpg" alt="Café Espresso intenso" />
+            <h3>Espresso</h3>
             <p>
-              Café fuerte de color negro muy aromáticocon su espuma de color
-              dorado
+              Café puro y concentrado con crema dorada. La esencia del café en su forma más intensa y aromática.
             </p>
-            <a href="" class="btn"> Añadir al carrito $10 </a>
+            <a href="#" class="btn">Añadir $35</a>
           </div>
 
           <div class="best-sellers-item">
-            <h3>Café Cappuccino</h3>
-            <img src="images/pro3.jpg" alt="Imágen del Producto" />
+            <img src="images/pro3.jpg" alt="Cappuccino italiano" />
+            <h3>Cappuccino</h3>
             <p>
-              Combinación de espresso, leche vaporizada y espuma de leche en
-              partes iguales
+              La combinación perfecta de espresso, leche vaporizada y espuma cremosa en partes iguales.
             </p>
-            <a href="" class="btn"> Añadir al carrito $10 </a>
+            <a href="#" class="btn">Añadir $50</a>
           </div>
 
           <div class="best-sellers-item">
-            <h3>Café moka (Mochachino)</h3>
-            <img src="images/pro4.jpg" alt="Imágen del Producto" />
+            <img src="images/pro4.jpg" alt="Mochaccino con chocolate" />
+            <h3>Mochaccino</h3>
             <p>
-              Es el resultado de la unión de café y chocolate con sabores
-              ligeros y dulces
+              Fusión irresistible de espresso, chocolate premium y leche cremosa. Para los amantes del dulce.
             </p>
-            <a href="" class="btn"> Añadir al carrito $10 </a>
+            <a href="#" class="btn">Añadir $55</a>
           </div>
         </div>
       </div>
@@ -108,108 +109,93 @@
         <div class="product-content">
           <picture>
             <source media="(max-width:992px)" srcset="./images/new-pro-verical.webp">
-            <img src="images/new-pro.webp" alt="Imagen de nuevo producto" />
+            <img src="images/new-pro.webp" alt="Bebida Energía Helada - Nuevo producto refrescante" />
           </picture>
-          
+
           <div class="product-info">
-            <h3 class="title2">Presentamos la energía helada</h3>
+            <h3 class="title2">Energía Helada</h3>
             <p>
-              Mejora tu día con un poderoso impulso de energía sin azucar
-              elaborado con sabores de futas y té helado
+              Mejora tu día con un poderoso impulso de energía sin azúcar,
+              elaborado con sabores de frutas tropicales y té helado premium.
+              La combinación perfecta para mantenerte activo.
             </p>
-            <a href="" class="btn"> Ordena ahora</a>
+            <a href="#" class="btn">Ordena Ahora</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="menu">
-      <h2 class="title2">Menú</h2>
+    <section class="menu" id="menu">
+      <h2 class="title2">Nuestro Menú</h2>
       <div class="container">
         <div class="menu-content">
           <div class="menu-content2">
             <article>
-              <h5>Para Tomar</h5>
+              <h5>Bebidas</h5>
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Americano</h6>
+                <p class="price">$35</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Espresso suavizado con agua caliente. Intenso pero equilibrado, ideal para los puristas del café.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Flat White</h6>
+                <p class="price">$50</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Doble shot de espresso con microespuma de leche aterciopelada. Origen australiano, sabor excepcional.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Caramel Macchiato</h6>
+                <p class="price">$60</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Capas de vainilla, leche vaporizada, espresso y caramelo artesanal. Una experiencia dulce y sofisticada.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Cold Brew</h6>
+                <p class="price">$55</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Café extraído en frío durante 18 horas. Suave, menos ácido y naturalmente dulce. Perfecto para el verano.
                 </p>
               </div>
             </article>
 
             <article>
-              <h5>Para Comer</h5>
+              <h5>Delicias</h5>
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Croissant de Almendras</h6>
+                <p class="price">$45</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Croissant artesanal horneado cada mañana, relleno de crema de almendras y cubierto con láminas tostadas.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Cheesecake New York</h6>
+                <p class="price">$65</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Receta tradicional neoyorquina con base de galleta, textura cremosa y toque de vainilla de Madagascar.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Tostada de Aguacate</h6>
+                <p class="price">$70</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Pan artesanal tostado con aguacate fresco, huevo pochado, semillas de chía y un toque de limón.
                 </p>
               </div>
 
               <div class="menu-item">
-                <h6 class="name">Lorem</h6>
-                <p class="price">$10</p>
+                <h6 class="name">Brownie Premium</h6>
+                <p class="price">$50</p>
                 <p class="desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi ipsam consequatur suscipit ad ipsum harum eum,
-                  adipisci aliquam. Iure porro voluptas iusto.
+                  Chocolate belga 70% cacao, nueces caramelizadas y centro fundente. Servido tibio con helado opcional.
                 </p>
               </div>
             </article>
@@ -218,33 +204,33 @@
       </div>
     </section>
 
-    <section class="gallery">
-      <img src="images/2.jpg" alt="Img de cafeteria" />
-      <img src="images/4.jpg" alt="Img de cafeteria" />
-      <img src="images/5.jpg" alt="Img de cafeteria" />
-      <img src="images/7.jpg" alt="Img de cafeteria" />
-      <img src="images/pro1.jpg" alt="Img de cafeteria" />
-      <img src="images/pro2.jpg" alt="Img de cafeteria" />
-      <img src="images/pro3.jpg" alt="Img de cafeteria" />
-      <img src="images/pro4.jpg" alt="Img de cafeteria" />
+    <section class="gallery" id="galeria">
+      <img src="images/2.jpg" alt="Interior acogedor de Cafetería Zen" />
+      <img src="images/4.jpg" alt="Barista preparando café especialidad" />
+      <img src="images/5.jpg" alt="Ambiente relajante de nuestra cafetería" />
+      <img src="images/7.jpg" alt="Detalles decorativos del local" />
+      <img src="images/pro1.jpg" alt="Latte art profesional" />
+      <img src="images/pro2.jpg" alt="Espresso con crema perfecta" />
+      <img src="images/pro3.jpg" alt="Cappuccino tradicional italiano" />
+      <img src="images/pro4.jpg" alt="Mochaccino con chocolate premium" />
     </section>
 
-    <section class="location">
+    <section class="location" id="contacto">
       <div class="container">
-        <h2 class="title2">Ubicación</h2>
+        <h2 class="title2">Encuéntranos</h2>
         <div class="location-content">
           <address class="address">
             <h3>Dirección</h3>
-            <p>Calle Falsa 123, Ciudad, País</p>
-            <p>Teléfono <a href="tel:+1234567890">(123)456-7890</a></p>
-            <p>Email: <a href="mailto">cafeteriazen@contacto.com</a></p>
+            <p><i class='bx bx-map'></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class='bx bx-phone'></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+            <p><i class='bx bx-envelope'></i> <a href="mailto:hola@cafeteriazen.com">hola@cafeteriazen.com</a></p>
           </address>
           <section class="schedules">
             <h3>Horarios</h3>
             <ul>
-              <li>Lunes - Viernes: 8:00 AM - 10:00 PM</li>
-              <li>Sábado: 9:00 AM - 11:00 PM</li>
-              <li>Domingo: 10:00 AM - 9:00 PM</li>
+              <li><strong>Lunes - Viernes:</strong> 7:00 AM - 10:00 PM</li>
+              <li><strong>Sábado:</strong> 8:00 AM - 11:00 PM</li>
+              <li><strong>Domingo:</strong> 9:00 AM - 9:00 PM</li>
             </ul>
           </section>
         </div>
@@ -260,45 +246,48 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de Cafetería Zen en Google Maps"
       ></iframe>
     </section>
-    
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <h2>CAFÉ-ZEN</h2>
-            <p class="desc">LA CAFETERIA</p>
+            <h2>Cafetería Zen</h2>
+            <p class="desc">El Arte del Café</p>
           </div>
           <div class="social-media">
-            <a href=""><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-instagram' ></i></a>
-            <a href=""><i class='bx bxl-tiktok' ></i></a>
-            <a href=""><i class='bx bxl-youtube' ></i></a>
-            <a href=""><i class='bx bxl-pinterest' ></i></a>
-            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+            <a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+            <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+            <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
           </div>
           <div class="footer-about">
             <h3>Sobre Nosotros</h3>
             <ul>
-              <li><a href="">Nuestro café</a></li>
-              <li><a href="">Historias y blogs</a></li>
-              <li><a href="">Servicio al cliente</a></li>
-              <li><a href="">Contáctanos</a></li>
+              <li><a href="#">Nuestro Café</a></li>
+              <li><a href="#">Historia</a></li>
+              <li><a href="#">Trabaja con Nosotros</a></li>
+              <li><a href="#">Contáctanos</a></li>
             </ul>
           </div>
           <div class="footer-other">
-            <h3>Avisos legales</h3>
+            <h3>Legal</h3>
             <ul>
-              <li><a href="">Avisos de privacidad</a></li>
-              <li><a href="">Condiciones de uso</a></li>
-              <li><a href="">Accecsibilidad</a></li>
-              <li><a href="">Cookies</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Accesibilidad</a></li>
+              <li><a href="#">Cookies</a></li>
             </ul>
           </div>
-          <p class="footer-text">&copy; 2025 Cafeteria Zen.</p>
+          <p class="footer-text">&copy; 2026 Cafetería Zen. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
